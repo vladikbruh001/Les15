@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <header>
+        <!--
+        <nav>
+            <a href="index.html" class="navmenu">Home</a>
+            <a href="contact.html" class="navmenu">Concant</a>
+            <a href="mijncv.html" class="navmenu">CV</a>
+        </nav>
+-->
+<nav>
+        <ul>
+            <li><a href="index.html" class="navmenu">Home</a></li>
+            <li><a href="mijncv.html" class="navmenu">CV</a></li>
+            <li> <a href="contact.html" class="navmenu">Contact</a></li>
+        </ul>
+</nav>
+
+    </header>
+
+    <main>
+
+        <form action="https://formspree.io/f/maqqwjwb" method="POST" id="contactform">
+            Contactformulier <br>
+
+            <input type="text" class="FirstName" name="FirstName" placeholder="Your first name" required>
+            <input type="text" class="SecondName" name="SecondName" placeholder="Your last name" required>
+            <input type="email" class="email" name="email" placeholder="Uw email" required>
+            <!-- name heeft class in plaats van id (als het grote website is zouden vormulieren vaker voorkomen) -->
+            <textarea class="TextSpace" name="message"placeholder="Uw boodschap"></textarea>
+
+            <button type="submit" class="SendKnop">Verzend</button>
+        </form>
+
+    </main>
+
+
+
+
+
+
+    <footer>
+        <p>© 2026 Vlad. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>

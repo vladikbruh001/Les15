@@ -1,0 +1,114 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    color: green;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 230, 7);
+}
+
+main {
+    max-width: 600px;   /* met 900 was image niet in het midde */
+    margin: 0 auto;     /* Zet dat in het midde */
+    padding: 20px;
+}
+
+/* nav menu */
+
+.navmenu {
+    color: rgb(176, 240, 0);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px; /*zo moet dat volgens opdracht maar ik zou 0 doen anders is dat niet mooi met a:hoover */
+    overflow: hidden;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    display: inline-block; /* werkt samen met display:flex; van ul anders is nav manu te klein/dun  */
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: #6f04a1;
+    border-radius: 20px;
+}
+
+/* CV pagina */
+
+table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+
+td,
+th {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 0);
+}
+
+/* Contact pagina*/
+
+form {
+    background-color: #504e4e;
+    max-width: 400px;
+    margin: 0 auto;   /* enteerd dat*/
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.FirstName,
+.SecondName,
+.email,
+.TextSpace,
+.SendKnop {
+    display: block;
+    margin: 15px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 5px lightgreen;
+}
+
+.TextSpace {
+    height: 100px;
+    padding: 5px 4px;
+}
+
+.SendKnop:active {
+    background-color: rgb(223, 6, 252);
+    color: white;
+    box-shadow: inset 2px 2px 5px blue;
+}
+
+/*  Footer  */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+
+
+/* 
+Bronnen van dit huiswerk
+
+Dat was beetje moeilijk met het alles in het midde zetten wat stond in de opdracht
+want als ik alleen met padding of margin ging werken gingen anderen dingen kapot
+dus moest hulp middelen gebuiken als
+Chatgpt.com en https://www.w3schools.com/css/css_navbar_horizontal.asp
+*/
+
+/* Ik vondt het met mij eigen class namen makkelijker on code meer leesbaar */
+/* Ik snap ook dat het niet heel handig is om alle 3 pagina's in 1 css bestand te doen maar omdat het best wel makelijke paginas waren heb ik het wel gedaan anders moest 
+ik overal style ik code plaatsen of meerdere bestanden maken wat ook omhandig is voor zoo simple huiswerk opgaven */
